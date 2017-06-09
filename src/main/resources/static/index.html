@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <script src="./js/jquery-2.2.3.js" ></script>
+    <script src="./js/bootstrap.js" ></script>
+    <script src="./js/vue.js" ></script>
+    <script src="./js/index.js" ></script>
+    <link href="./css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+
+<div>
+    <h2>这只是一个小demo</h2>
+</div>
+<div id="ulist">
+    <table class="table">
+        <thead>
+            <tr>
+                <td>id</td>
+                <td>name</td>
+            </tr>
+        </thead>
+        <tbody>
+        <tr v-for="user in userList" >
+            <td>{{ user.userId }}</td>
+            <td>{{ user.userName }}</td>
+            <td><span class="btn-link">add</span></td>
+            <td><span class="btn-link">del</span></td>
+
+        </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+</div>
+</body>
+</html>
